@@ -1,0 +1,19 @@
+function Main.main 2
+push constant 0
+pop local 1
+call starter.frontpage 0
+pop temp 0
+label WHILE_EXP0
+push local 1
+push constant 0
+eq
+not
+if-goto WHILE_END0
+call initialliser.new 0
+pop local 0
+call modeSelector.key 0
+pop temp 0
+goto WHILE_EXP0
+label WHILE_END0
+push constant 0
+return

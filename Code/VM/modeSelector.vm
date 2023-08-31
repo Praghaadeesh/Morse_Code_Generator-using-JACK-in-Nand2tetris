@@ -1,0 +1,32 @@
+function modeSelector.key 1
+call Keyboard.readChar 0
+pop local 0
+push local 0
+push constant 49
+eq
+if-goto IF_TRUE0
+goto IF_FALSE0
+label IF_TRUE0
+call encoder.converter 0
+pop temp 0
+label IF_FALSE0
+push local 0
+push constant 50
+eq
+if-goto IF_TRUE1
+goto IF_FALSE1
+label IF_TRUE1
+call decoder.inverter 0
+pop temp 0
+label IF_FALSE1
+push local 0
+push constant 51
+eq
+if-goto IF_TRUE2
+goto IF_FALSE2
+label IF_TRUE2
+call Morsetable.Table 0
+pop temp 0
+label IF_FALSE2
+push constant 0
+return
