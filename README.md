@@ -1,4 +1,4 @@
-# Morse_Code_Genrator-using-JACK
+# Morse_Code_Generator-using-JACK
 
 This mini project is created in Nand-2-tetris using JACK language.
 The program encodes a string into morse code or decodes a morse code into string.
