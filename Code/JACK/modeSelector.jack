@@ -1,0 +1,25 @@
+
+class modeSelector {
+
+   function void key() {
+    var int y;
+    let y = Keyboard.readChar();
+
+    if (y = 49){
+	do encoder.converter();
+   }	
+
+    if (y = 50){
+	do decoder.inverter();
+   }	
+
+    if (y = 51){
+	do Morsetable.Table();
+   }	
+return;
+ }
+
+}
+
+
+

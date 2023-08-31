@@ -1,0 +1,186 @@
+
+
+class initialliser {
+   field int x;
+
+  constructor initialliser new() {
+      do Screen.clearScreen();
+      do Bordermaker();
+	do UI();
+     
+      return this;
+   }
+
+constructor initialliser new1() {
+      do Screen.clearScreen();
+      do Bordermaker2();
+	
+     
+      return this;
+   }
+
+constructor initialliser new2() {
+      do Screen.clearScreen();
+      do Bordermaker3();
+	
+     
+      return this;
+   }
+
+
+
+    method void Bordermaker() {
+
+        var int loc;
+        var boolean case;
+        let loc = 0;
+        let case = true;
+        while (((loc < 8191) | (loc = 8191)) & case){
+
+            if (loc < 7680){
+		do design.draw(loc);
+                let loc = loc + 512;
+                if (loc = 7680){
+                    do design.draw(loc);
+                }
+            }
+            
+            if (((loc > 7680) | (loc = 7680)) & (loc < 7712)){
+		let loc = loc + 1;
+                do design.draw(loc);
+                if (loc = 7712){
+                    let case = false;
+                }
+            }
+
+        }
+        let case = true;
+        let loc = loc - 1;
+        while (((loc > 0) | (loc = 0)) & case){
+            if (((loc < 7711) | (loc = 7711)) & (loc > 31)){
+                let loc = loc - 512;
+                do design.draw(loc);
+            }
+            
+            if (((loc < 31) | (loc = 31)) & (loc > 0)){
+                let loc = loc - 1;
+                do design.draw(loc);
+                if (loc = 0) {
+		    let case = false;
+		}
+            }
+        }
+
+        return;
+
+    }
+
+method void Bordermaker2() {
+
+        var int loc;
+        var boolean case;
+        let loc = 0;
+        let case = true;
+        while (((loc < 8191) | (loc = 8191)) & case){
+
+            if (loc < 7680){
+		do design2.draw(loc);
+                let loc = loc + 512;
+                if (loc = 7680){
+                    do design2.draw(loc);
+                }
+            }
+            
+            if (((loc > 7680) | (loc = 7680)) & (loc < 7712)){
+		let loc = loc + 1;
+                do design2.draw(loc);
+                if (loc = 7712){
+                    let case = false;
+                }
+            }
+
+        }
+        let case = true;
+        let loc = loc - 1;
+        while (((loc > 0) | (loc = 0)) & case){
+            if (((loc < 7711) | (loc = 7711)) & (loc > 31)){
+                let loc = loc - 512;
+                do design2.draw(loc);
+            }
+            
+            if (((loc < 31) | (loc = 31)) & (loc > 0)){
+                let loc = loc - 1;
+                do design2.draw(loc);
+                if (loc = 0) {
+		    let case = false;
+		}
+            }
+        }
+
+        return;
+
+    }
+
+method void Bordermaker3() {
+
+        var int loc;
+        var boolean case;
+        let loc = 0;
+        let case = true;
+        while (((loc < 8191) | (loc = 8191)) & case){
+
+            if (loc < 7680){
+		do design3.draw(loc);
+                let loc = loc + 512;
+                if (loc = 7680){
+                    do design3.draw(loc);
+                }
+            }
+            
+            if (((loc > 7680) | (loc = 7680)) & (loc < 7712)){
+		let loc = loc + 1;
+                do design3.draw(loc);
+                if (loc = 7712){
+                    let case = false;
+                }
+            }
+
+        }
+        let case = true;
+        let loc = loc - 1;
+        while (((loc > 0) | (loc = 0)) & case){
+            if (((loc < 7711) | (loc = 7711)) & (loc > 31)){
+                let loc = loc - 512;
+                do design3.draw(loc);
+            }
+            
+            if (((loc < 31) | (loc = 31)) & (loc > 0)){
+                let loc = loc - 1;
+                do design3.draw(loc);
+                if (loc = 0) {
+		    let case = false;
+		}
+            }
+        }
+
+        return;
+
+    }
+
+method void UI() {
+	do Output.moveCursor(3,22);
+	do Output.printString("MORSE CODE CONVERTER");
+	do Output.moveCursor(6,25);
+	do Output.printString("1. ENCODER");
+	do Output.moveCursor(9,25);
+	do Output.printString("2. DECODER");
+	do Output.moveCursor(12,25);
+	do Output.printString("3. MORSE TABLE");
+	return;
+}
+
+}   
+
+
+
+

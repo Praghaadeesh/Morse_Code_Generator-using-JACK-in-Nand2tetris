@@ -1,0 +1,285 @@
+
+class encoder {
+
+function void converter() {
+   
+    var String x;
+    var int y;
+
+   do Screen.clearScreen();
+   do Output.moveCursor(2,25);
+   do Output.printString("ENCODER");
+   do Output.moveCursor(4,4);
+   do Output.printString("Enter the sentence to convert into morse code");
+   do Output.moveCursor(5,4);
+   let x = Keyboard.readLine("->");
+   let y = x.length();
+   
+
+  
+   do encoder.recognise(x,y);
+   return;
+}
+
+function void recognise(String x, int y) {
+  
+   var int z;
+   var char p;
+   let z=0;
+  
+do Output.moveCursor(10,20);
+do Output.printString("MORSE CODE FORM OF ");
+do Output.moveCursor(11,20);
+do Output.printString("->");
+do Output.moveCursor(11,22);
+do Output.printString("'");
+do Output.printString(x);
+do Output.printString("'");
+do Output.moveCursor(12,0);
+
+   while(z<y){
+
+    let p = x.charAt(z);
+
+//A
+if (p = 65){
+  do Output.printString(".....-");
+     
+}
+
+//B
+if (p = 66){
+   do Output.printString("....-.");
+      
+}
+
+//C
+if (p = 67){
+   do Output.printString("....--");
+      
+}
+
+//D
+if (p = 68){
+  do Output.printString("...-..");
+      
+}
+
+//E
+if (p = 69){
+    do Output.printString("...-.-");
+      
+}
+
+//F
+if (p = 70){
+   do Output.printString("...--.");
+      
+}
+
+//G
+if (p = 71){
+   do Output.printString("...---");
+      
+}
+
+//H
+if (p = 72){
+   do Output.printString("..-...");
+      
+}
+
+//I
+if (p = 73){
+   do Output.printString("..-..-");
+      
+}
+
+//J
+if (p = 74){
+   do Output.printString("..-.-.");
+      
+}
+
+//K
+if (p = 75){
+   do Output.printString("..-.--");
+      
+}
+
+//L
+if (p = 76){
+   do Output.printString("..--..");
+      
+}
+
+//M
+if (p = 77){
+    do Output.printString("..--.-");
+      
+}
+
+//N
+if (p = 78){
+   do Output.printString("..---.");
+      
+}
+
+//O
+if (p = 79){
+   do Output.printString("..----");
+      
+}
+
+//P
+if (p = 80){
+  do Output.printString(".-....");
+      
+}
+
+//Q
+if (p = 81){
+   do Output.printString(".-...-");
+      
+}
+
+//R
+if (p = 82){
+   do Output.printString(".-..-.");
+      
+}
+
+//S
+if (p = 83){
+    do Output.printString(".-..--");
+      
+}
+
+//T
+if (p = 84){
+   do Output.printString(".-.-..");
+      
+}
+
+//U
+if (p = 85){
+   do Output.printString(".-.-.-");
+      
+}
+
+//V
+if (p = 86){
+   do Output.printString(".-.--.");
+      
+}
+
+//W
+if (p = 87){
+   do Output.printString(".-.---");
+      
+}
+
+//X
+if (p = 88){
+   do Output.printString(".--...");
+      
+}
+
+//Y
+if (p = 89){
+   do Output.printString(".--..-");
+      
+}
+
+//Z
+if (p = 90){
+   do Output.printString(".--.-.");
+      
+}
+
+//space
+if (p = 32){
+   do Output.printString("  ");
+      
+}
+
+//0   
+if (p = 48){
+   do Output.printString(".--.--");
+
+ }
+
+//1 
+if (p = 49){
+   do Output.printString(".---.."); 
+
+}
+
+//2
+if (p = 50){
+   do Output.printString(".---.-");
+
+}
+
+//3
+if (p = 51){
+   do Output.printString(".----.");
+
+}
+
+//4
+if (p = 52){
+   do Output.printString(".-----");
+
+}
+
+//5
+if (p = 53){
+   do Output.printString("-.....");
+
+}
+
+//6
+if (p = 54){
+   do Output.printString("-....-");  
+ 
+}
+
+//7   
+if (p = 55){
+   do Output.printString("-...-.");   
+
+}
+
+//8
+if (p = 56){
+   do Output.printString("-...--");   
+
+}
+
+//9
+if (p = 57){
+   do Output.printString("-..-.."); 
+  
+}
+
+//-
+if (p = 45){
+   do Output.printString("-..-.-");  
+    
+}
+  
+    let z = z+1;
+    do Sys.wait(500);
+
+}
+
+   do Output.moveCursor(20,20);
+   do Output.printString("PRESS ANY KEY TO EXIT");
+   do Keyboard.readChar();
+
+return;
+
+}
+
+}

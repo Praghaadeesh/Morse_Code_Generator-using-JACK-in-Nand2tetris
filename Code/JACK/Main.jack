@@ -1,0 +1,16 @@
+
+class Main {
+    function void main() {
+        var initialliser ui; 
+        var int m;
+        let m =0;
+        do starter.frontpage();
+
+	while(m=0){
+        let ui = initialliser.new();
+        do modeSelector.key();
+        
+}
+return;
+}
+}
